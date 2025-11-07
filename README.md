@@ -1,6 +1,6 @@
 ## agh-java
 
-This repository is my classwork for the *Object Oriented Programming* course
+This repository is my classwork for the **Object Oriented Programming** course
 
 ### Requirements
 

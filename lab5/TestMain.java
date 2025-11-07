@@ -1,0 +1,32 @@
+public class TestMain {
+    public static void main(String[] args) {
+        StudentReader sr = new StudentReader("<students>\r\n"
+                + "    <student id=\"1\">\r\n"
+                + "        <name>John Doe</name>\r\n"
+                + "        <gpa>3.4</gpa>\r\n"
+                + "    </student>\r\n"
+                + "    <student id=\"2\">\r\n"
+                + "        <name>Jane Smith</name>\r\n"
+                + "        <gpa>3.8</gpa>\r\n"
+                + "    </student>\r\n"
+                + "    <student id=\"3\">\r\n"
+                + "        <name>Mike Johnson</name>\r\n"
+                + "        <gpa>2.9</gpa>\r\n"
+                + "    </student>\r\n"
+                + "    <student id=\"4\">\r\n"
+                + "        <name></name>\r\n"
+                + "        <gpa>4.1</gpa>\r\n"
+                + "    </student>\r\n"
+                + "</students>");
+
+        System.out.println("Student count: " + sr.countStudents());
+
+        System.out.println("Students: ");
+        for (Student student : sr.getStudents()) {
+            System.out.println(student);
+        }
+
+        System.out.println(sr.getStudentNames());
+
+    }
+}
